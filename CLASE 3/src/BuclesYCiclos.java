@@ -1,13 +1,13 @@
 public class BuclesYCiclos {
 
-        public static void main() {
+      public static void main() {
 
             // =====================
             // EJEMPLO FOR
             // Usalo cuando SABES cuántas veces va a repetir
             // =====================
             System.out.println("=== CICLO FOR ===");
-            for (int i = 1; i <= 5; i++) {
+            for (int i = 6; i >= 1; i--) {
                 System.out.println("Vuelta numero: " + i);
             }
 
@@ -17,7 +17,7 @@ public class BuclesYCiclos {
             // Primero PREGUNTA, luego EJECUTA
             // =====================
             System.out.println("\n=== CICLO WHILE ===");
-            int cont = 9;
+            int cont = 1;
             while (cont <= 5) {
                 System.out.println("Vuelta numero: " + cont);
                 cont = cont + 1;
