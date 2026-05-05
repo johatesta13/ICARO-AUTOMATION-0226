@@ -8,7 +8,7 @@ public class Main {
 
 
         System.out.println("ID: "  + estudianteMaria.getId());
-        System.out.println("ID: "  + estudianteMaria.id());
+        // no se puede acceder sin getter System.out.println("ID: "  + estudianteMaria.id());
         System.out.println("Nombre: "  + estudianteMaria.getNombreCompleto());
         System.out.println("Promedio: "  + estudianteMaria.getPromedio());
 
