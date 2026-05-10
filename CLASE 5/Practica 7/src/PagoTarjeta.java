@@ -10,13 +10,13 @@ public class PagoTarjeta  extends  Pago{
     }
 
     @Override
-    public boolean procesarPago(){
+   public boolean procesarPago(){
 
         System.out.println("Procesando pago con tarjeta...");
         System.out.println("Monto:  $" + getMonto());
         return true;
     }
-
+    
     public String getNumeroTarjeta() {
         return numeroTarjeta;
     }

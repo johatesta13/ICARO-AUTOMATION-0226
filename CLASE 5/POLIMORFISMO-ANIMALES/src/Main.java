@@ -1,5 +1,4 @@
 public class Main {
-
     void main(){
         Perro max = new Perro("Max", 3);
         Gato michi = new Gato("Michi", 2);
