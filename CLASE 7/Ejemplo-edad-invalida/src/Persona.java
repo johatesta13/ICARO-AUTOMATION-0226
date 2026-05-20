@@ -7,6 +7,11 @@ public class Persona {
         this.nombre = nombre;
         setEdad(edad); // Usa el setter para validar
     }
+
+
+
+
+
     
     // Método que valida y asigna la edad
     public void setEdad(int edad) throws EdadInvalidaException {

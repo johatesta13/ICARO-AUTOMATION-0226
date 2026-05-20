@@ -11,5 +11,8 @@ public class ErrorEjecucion {
         int divisor = 0;
         int resultado = numero / divisor; // ArithmeticException
         System.out.println("Resultado: " + resultado);
+
+
+
     }
 }

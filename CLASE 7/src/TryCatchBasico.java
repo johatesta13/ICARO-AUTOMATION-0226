@@ -16,7 +16,7 @@ public class TryCatchBasico {
         System.out.println("2. Con try-catch:");
         try {
             int numero = 10;
-            int divisor = 0;
+            int divisor = 5;
             int resultado = numero / divisor; // Excepción lanzada aquí
             System.out.println("Resultado: " + resultado);
         } catch (ArithmeticException e) {
