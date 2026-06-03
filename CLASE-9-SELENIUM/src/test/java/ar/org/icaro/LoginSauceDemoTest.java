@@ -86,6 +86,41 @@ public class LoginSauceDemoTest {
 
 
 
+    /**
+     * TEST 3: Login con Credenciales Inválidas
+     * Usuario: usuario_falso
+     * Password: password_malo
+     * Verificar: Aparece error, NO navega a inventory
+     */
+    @Test
+    public void loginCredencialesInvalidas() {
+        // 1. Escribir usuario inválido
+        WebElement campousuario = driver.findElement(By.id("user-name"));
+        campousuario.sendKeys(USUARIO_STANDARD);
+
+        // 2. Escribir password inválido
+        WebElement campoPassword = driver.findElement(By.id("password"));
+        campoPassword.sendKeys(PASSWORD_INCORRECTO);
+        // 3. Click en Login
+        WebElement botonlogin = driver.findElement(By.id("login-button"));
+        botonlogin.click();
+
+
+        // 4. Verificar que aparece mensaje de error
+        WebElement mensajeError = driver.findElement(By.cssSelector("[data-test='error']"));
+        Assert.assertTrue(mensajeError.isDisplayed(),
+                "Debería aparecer un mensaje de error");
+
+        String textoError = mensajeError.getText();
+        Assert.assertTrue(textoError.contains("Username and password dont match"),
+                "El mensaje debería indicar que las credenciales no coinciden");
+
+        // 5. Verificar que NO navegó a inventory
+        String urlActual = driver.getCurrentUrl();
+        Assert.assertFalse(urlActual.contains("inventory"),
+                "No debería haber navegado a inventory con credenciales inválidas");
+    }
+
 
 
 
