@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="CLASE-10y11-POM" />
         <module name="CLASE-9" />
+        <module name="POM-AVANZADO" />
         <module name="CLASE-9-SELENIUM" />
       </profile>
     </annotationProcessing>
